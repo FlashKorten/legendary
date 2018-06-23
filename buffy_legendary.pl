@@ -2,6 +2,7 @@
 
 use strict;
 use warnings;
+use diagnostics;
 use List::Util qw(shuffle);
 use File::Basename;
 
@@ -108,7 +109,6 @@ if ($scheme eq "Summon the Uber Vamps") {
 } elsif ($scheme eq "Road to Damnation") {
     my $fallenHero = shift @possiblyFallenHeroes;
     $selectedVillains{$fallenHero} = 1;
-    $numberOfVillains++;
 } elsif ($scheme eq "Twilight Terror") {
     push @specialInfo, "limit Courage Token supply to 4 per player";
 }
